@@ -4,16 +4,13 @@ import config from './config';
 
 
 export default setupInterceptors = (store) => {  
-    axiosInstance.interceptors.response.use( (config) => {
+    axiosInstance.interceptors.response.use( 
           // Return a successful response back to the calling service
           response => successHandler(response),
           // Return any error which is not due to authentication back to the calling service
           error => errorHandler(error)
-    }
     )
 }
-
-
 
 
   const errorHandler = (error) => {

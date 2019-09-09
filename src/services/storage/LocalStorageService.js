@@ -5,9 +5,9 @@ const LocalStorageService = ( () => {
     function _getService() {
         if(!_service) {
           _service = this;
-          return _service
+          return _service;
       }
-      return _service
+      return _service;
     }
 
 
@@ -26,7 +26,6 @@ const LocalStorageService = ( () => {
       return localStorage.getItem('refresh_token');
     }
 
-
     function _clearToken() {
       localStorage.removeItem('access_token');
       localStorage.removeItem('refresh_token');
@@ -42,4 +41,6 @@ const LocalStorageService = ( () => {
     }
 
    })();
+
+   
    export default LocalStorageService;
