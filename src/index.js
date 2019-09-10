@@ -5,10 +5,6 @@ import { Provider } from "react-redux";
 
 import App from './components/App/App';
 import store from './services/redux/store';
-import LocalStorageService from './services/storage/LocalStorageService';
-
-const localStorageService = LocalStorageService.getService();
-console.log("localStorageService" , localStorageService)
 
 ReactDOM.render(
     <Provider store={store}>
@@ -16,3 +12,7 @@ ReactDOM.render(
     </Provider>, 
     document.querySelector('#root')
 )
+
+
+
+

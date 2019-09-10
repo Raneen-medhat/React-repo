@@ -1,11 +1,11 @@
-const initialState = {
-    // userData: {},
-    // isFetching: false,
-    // isError: false
-  };
+
+
+import { combineReducers } from 'redux'
+import {fetchProducts} from './fetchProducts';
+import {fetchData} from './fetchData'
+
+export default combineReducers({
+    fetchProducts,
+    posts: fetchData
+})
   
-  const asyncReducer = ( state = initialState , action) => {
-    return state;
-  };
-  
-  export default asyncReducer;
