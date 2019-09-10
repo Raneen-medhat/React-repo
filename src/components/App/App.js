@@ -11,15 +11,12 @@ class App extends Component {
         )
     }
     componentDidMount  = () => {
-        console.log("this.props" , this.props);
-        // this.props.getData()
         this.props.fetchData();
     }
 
 }
 
         const mapStateToProps = (state) =>  {
-            console.log('mapStateToProps' , state)
             return state
         }  
 
