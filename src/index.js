@@ -9,7 +9,6 @@ import products from './components/App/products/products'
 import store from './services/redux/store';
 
 
-
 ReactDOM.render(
     <Provider store={store}>
         <Router>

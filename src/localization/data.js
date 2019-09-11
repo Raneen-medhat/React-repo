@@ -1,5 +1,4 @@
 export const Localization = {
-    
         HELLO_WORLD: {
             ar:  "هالو",
             en:  "Hello World in engish"
