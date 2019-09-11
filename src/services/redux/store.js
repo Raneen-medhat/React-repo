@@ -2,7 +2,7 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 import reducers from "./reducers";
-import setupInterceptors from './../../services/networking/intercepor';
+import setupInterceptors from './../../services/networking/interceptor';
 
 const store = createStore( reducers, applyMiddleware(thunk));
 // set up the interceptors!

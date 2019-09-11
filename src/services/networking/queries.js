@@ -1,6 +1,6 @@
 import axios, { AxiosPromise, AxiosInstance } from 'axios';
 import config from './config';
-// import setupInterceptors from './../networking/intercepor';
+// import setupInterceptors from './../networking/interceptor';
 
  class HTTPClient {
    static client = axios.create({
